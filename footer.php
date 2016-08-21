@@ -7,6 +7,14 @@
       // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       // ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
+    <nav class="nav">
+      <?php
+        $args = array(
+          'theme_location' => 'footer'
+        );
+      ?>
+      <?php wp_nav_menu($args); ?>
+    </nav>
     <?php wp_footer(); ?>
   </body>
 </html>

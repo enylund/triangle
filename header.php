@@ -41,6 +41,11 @@
         <a href="<?php bloginfo('url'); ?>/" rel="home"><?php bloginfo('name'); ?></a>
       </h1>
       <nav class="nav">
-        <?php wp_nav_menu(); ?>
+        <?php
+          $args = array(
+            'theme_location' => 'primary'
+          );
+        ?>
+        <?php wp_nav_menu($args); ?>
       </nav>
     </header>

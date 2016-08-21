@@ -35,3 +35,11 @@ foreach (glob(get_stylesheet_directory() . '/functions/filters/*.php') as $filen
 foreach (glob(get_stylesheet_directory() . '/functions/shortcodes/*.php') as $filename) {
   require_once $filename;
 }
+
+// Navigation Menus
+register_nav_menus(array(
+
+  'primary' => __('Primary Menu'),
+  'footer' => __('Footer Menu')
+
+));
