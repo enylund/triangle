@@ -3,6 +3,7 @@
   <div id="post-<?php the_ID() ?>" <?php post_class() ?>>
     <h2 class="entry-title"><?php the_title() ?></h2>
     <div class="entry-content">
+      <div class="test col-sm-offset-5">OH HAI</div>
       <?php the_content() ?>
     </div>
   </div><!-- .post -->
