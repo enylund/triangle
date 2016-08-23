@@ -2,6 +2,12 @@
 // Main
 //
 
+h2 {
+  @include font--large;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .artist__name {
   @include font--regular;
 }
