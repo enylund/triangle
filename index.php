@@ -9,8 +9,8 @@
       while($artists->have_posts()) {
         $artists->the_post(); ?>
 
-        <p><?php the_field('first_name'); ?> <?php the_field('last_name'); ?></p>
-        <p><?php the_field('bio'); ?></p>
+        <div class='artist__name'><?php the_field('first_name'); ?> <?php the_field('last_name'); ?></p>
+        <p class='artist__bio'><?php the_field('bio'); ?></p>
 
       <?php }
       wp_reset_postdata();

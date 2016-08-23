@@ -3,7 +3,9 @@
 ///////////////////////////////////////////////////
 
 // Font stacks
-$font-stack__regular : sans-serif;
+$font-stack__regular : 'Founders Light',sans-serif;
+$font-stack__italic : 'Founders Light Italic',sans-serif;
+
 
 ///////////////////////////////////////////////////
 // Typography definitions
@@ -12,6 +14,15 @@ $font-stack__regular : sans-serif;
 // Regular
 @mixin font--regular {
   font-family: $font-stack__regular;
+  font-size:      1.8rem;
+  line-height:    2.1rem;
+  letter-spacing: 0.025rem;
+}
+
+
+// Regular
+@mixin font--italic {
+  font-family: $font-stack__italic;
   font-size:      1.8rem;
   line-height:    2.1rem;
   letter-spacing: 0.025rem;
