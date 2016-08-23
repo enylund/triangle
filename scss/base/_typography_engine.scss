@@ -12,10 +12,17 @@ $font-stack__italic : 'Founders Light Italic',sans-serif;
 ///////////////////////////////////////////////////
 
 // Regular
+@mixin font--large {
+  font-family: $font-stack__regular;
+  font-size:      100px;
+  line-height:    100px;
+}
+
+
 @mixin font--regular {
   font-family: $font-stack__regular;
-  font-size:      1.8rem;
-  line-height:    2.1rem;
+  font-size:      39px;
+  line-height:    39px;
   letter-spacing: 0.025rem;
 }
 
@@ -23,7 +30,7 @@ $font-stack__italic : 'Founders Light Italic',sans-serif;
 // Regular
 @mixin font--regular--italic {
   font-family: $font-stack__italic;
-  font-size:      1.8rem;
-  line-height:    2.1rem;
+  font-size:      39px;
+  line-height:    39px;
   letter-spacing: 0.025rem;
 }
