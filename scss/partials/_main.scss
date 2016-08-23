@@ -1,3 +1,7 @@
 //
 // Main
 //
+
+.artist__name {
+  @include font--regular;
+}

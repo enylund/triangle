@@ -21,7 +21,7 @@ $font-stack__italic : 'Founders Light Italic',sans-serif;
 
 
 // Regular
-@mixin font--italic {
+@mixin font--regular--italic {
   font-family: $font-stack__italic;
   font-size:      1.8rem;
   line-height:    2.1rem;
