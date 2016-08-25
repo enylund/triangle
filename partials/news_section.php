@@ -11,9 +11,15 @@
         $news_items->the_post(); ?>
 
         <div class="news_item_wrapper">
-          <a href="<?php the_field('link'); ?>">
+          <?php if( get_field('link') ): ?>
+            <a href="<?php the_field('link'); ?>">
+              <?php the_field('content'); ?>
+            </a>
+          <?php else: ?>
+          <div class=''>
             <?php the_field('content'); ?>
-          </a>
+          </div>
+          <?php endif; ?>
         </div>
 
      <?php }
