@@ -2,13 +2,18 @@
   <?php
 
     $news_array = array(
-      'category_name' => 'news'
+      'category_name' => 'news',
+      'meta_key'  => 'user_date',
+      'orderby' => 'user_date',
+      'order'   => 'DESC'
     );
 
     $news_items = new WP_Query($news_array);
     if($news_items->have_posts()) {
-      while($news_items->have_posts()) {
-        $news_items->the_post(); ?>
+      $counter = 0;
+      while($news_items->have_posts() && $counter < 3) {
+        $news_items->the_post();
+        ?>
 
         <div class="news_item_wrapper">
           <?php if( get_field('link') ): ?>
@@ -22,7 +27,8 @@
           <?php endif; ?>
         </div>
 
-     <?php }
+        <?php $counter++;
+      }
       wp_reset_postdata();
     }?>
 </section>
