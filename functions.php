@@ -43,3 +43,16 @@ register_nav_menus(array(
   'footer' => __('Footer Menu')
 
 ));
+
+// Add options page for address
+if( function_exists('acf_add_options_page') ) {
+
+  acf_add_options_page(array(
+    'page_title'  => 'General Contact Info',
+    'menu_title'  => 'Contact Info',
+    'menu_slug'   => 'theme-general-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ));
+
+}
