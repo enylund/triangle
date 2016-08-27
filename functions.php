@@ -50,7 +50,15 @@ if( function_exists('acf_add_options_page') ) {
   acf_add_options_page(array(
     'page_title'  => 'General Contact Info',
     'menu_title'  => 'Contact Info',
-    'menu_slug'   => 'theme-general-settings',
+    'menu_slug'   => 'contact-settings',
+    'capability'  => 'edit_posts',
+    'redirect'    => false
+  ));
+
+  acf_add_options_page(array(
+    'page_title'  => 'Support Info',
+    'menu_title'  => 'Support Info',
+    'menu_slug'   => 'support-settings',
     'capability'  => 'edit_posts',
     'redirect'    => false
   ));
