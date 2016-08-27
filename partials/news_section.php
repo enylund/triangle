@@ -1,4 +1,4 @@
-<section class="news">
+<section class="news row">
   <?php
 
     $news_array = array(
@@ -15,7 +15,7 @@
         $news_items->the_post();
         ?>
 
-        <div class="news_item_wrapper">
+        <div class="col-sm-4 news_item_wrapper">
           <?php if( get_field('link') ): ?>
             <a href="<?php the_field('link'); ?>">
               <?php the_field('content'); ?>

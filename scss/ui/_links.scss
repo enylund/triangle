@@ -1,3 +1,9 @@
 //
 // Links
 //
+
+@mixin default-link {
+    display: block;
+    color: black;
+    text-decoration: none;
+}

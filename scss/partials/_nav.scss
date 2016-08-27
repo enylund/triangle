@@ -1,0 +1,18 @@
+//
+// Main Nav
+//
+
+ul#menu-primary-menu-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-primary-menu-links li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+#menu-primary-menu-links li a {
+  @include default-link;
+}

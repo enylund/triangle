@@ -26,6 +26,13 @@ $font-stack__italic : 'Founders Light Italic',sans-serif;
   letter-spacing: 0.025rem;
 }
 
+@mixin font--small {
+  font-family: $font-stack__regular;
+  font-size:      31px;
+  line-height:    31px;
+  letter-spacing: 0.025rem;
+}
+
 
 // Regular
 @mixin font--regular--italic {
