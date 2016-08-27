@@ -2,10 +2,15 @@
 // Main Nav
 //
 
+.main-nav {
+  @include margin-top-small;
+  @include margin-bottom-large;
+}
+
 ul#menu-primary-menu-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #menu-primary-menu-links li {

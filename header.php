@@ -40,7 +40,7 @@
       <!--<h1 class="site-title">
         <a href="<?php bloginfo('url'); ?>/" rel="home"><?php bloginfo('name'); ?></a>
       </h1>-->
-      <nav class="nav">
+      <nav class="main-nav">
         <?php
           $args = array(
             'theme_location' => 'primary'
