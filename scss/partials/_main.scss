@@ -2,8 +2,9 @@
 // Main
 //
 
-h2 {
+h2, .site-wide__headline {
   @include font--large;
+  @include margin-bottom-medium;
   text-transform: uppercase;
   text-align: center;
 }
