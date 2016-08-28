@@ -3,9 +3,19 @@
 $ = jQuery;
 
 var App = {
+  pageInit: [],
+  pageLoad: [],
+  afterPageLoad: [],
+  pageResize: [],
+  pageScroll: [],
   windowWidth: $(window).width(),
   windowHeight: $(window).height(),
   scrollTop: $(window).scrollTop(),
+  runFunctions: function(array){
+    for(var i = 0; i < array.length; i++) {
+      array[i]();
+    }
+  },
 };
 
 $(window).resize(function() {
@@ -52,3 +62,19 @@ App.breakpoint = function(checkIfSize) {
 App.breakpoint.isMobile = function() {
   return ( App.breakpoint('xs') || App.breakpoint('sm') );
 };
+
+
+//////////////////////////////////////////////////////////////
+// On Page load
+//////////////////////////////////////////////////////////////
+
+$(document).on('page:load ready page:restore', function() {
+  App.runFunctions(App.pageInit);
+  App.runFunctions(App.pageResize);
+  App.runFunctions(App.pageScroll);
+  App.runFunctions(App.pageLoad);
+  App.runFunctions(App.afterPageLoad);
+});
+
+
+
