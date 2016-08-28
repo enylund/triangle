@@ -2,6 +2,18 @@
 // People Section
 //
 
+.people {
+  @include margin-bottom-huge;
+}
+
+.person-item__wrapper {
+  @include margin-bottom-medium;
+}
+
+.artist__bio {
+ @include margin-bottom-medium;
+}
+
 .artist__image-wrapper{
   @include default-flickity-style;
   overflow: hidden;
