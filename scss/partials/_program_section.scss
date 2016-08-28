@@ -1,0 +1,10 @@
+//
+// Program Section
+//
+.program_item {
+  @include margin-bottom-medium;
+}
+
+.program_item__category, .program_item__title, .program_item__date {
+  text-align: center;
+}
