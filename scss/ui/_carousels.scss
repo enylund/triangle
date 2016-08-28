@@ -1,0 +1,35 @@
+@mixin default-flickity-style {
+
+  .flickity-page-dots {
+    list-style-type:none;
+    padding-left:0;
+    bottom: 0px;
+    z-index: 100;
+    margin-top: 0px;
+    text-align: right;
+  }
+
+  .flickity-page-dots .dot {
+    width: 52px;
+    height: 52px;
+    border-radius: 52px;
+    opacity: 1;
+    background: transparent;
+    border: 3px solid $black;
+    display: inline-block;
+  }
+
+  .dot {
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background: $black;
+  }
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+
+}
