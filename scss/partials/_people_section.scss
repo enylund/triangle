@@ -1,0 +1,16 @@
+//
+// People Section
+//
+
+.artist__image-wrapper{
+  @include default-flickity-style;
+  overflow: hidden;
+}
+
+.artist__image {
+  width: 100%;
+  overflow: hidden;
+  img {
+    width:100%;
+  }
+}
