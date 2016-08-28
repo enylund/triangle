@@ -1,6 +1,8 @@
-<div class="content">
-  <div id="post">
-  <h2>People</h2>
+<section class="people">
+  <div class="row">
+    <h2 class='site-wide__headline col-sm-offset-1 col-sm-10'>
+      People
+    </h2>
     <?php
     //the query
     $args = array(
@@ -16,21 +18,36 @@
         $artists->the_post();
         $images = get_field('artwork_images'); ?>
 
-        <h3 class='artist__name'>
+        <h3 class='artist__name col-sm-offset-1 col-sm-10'>
           <?php the_field('first_name'); ?> <?php the_field('last_name'); ?>
         </h3>
-        <p class='artist__bio'>
+        <div class='artist__bio col-sm-offset-1 col-sm-10'>
           <?php the_field('bio'); ?>
-        </p>
+        </div>
 
         <?php if( $images ): ?>
-          <ul>
-            <?php foreach( $images as $image ): ?>
-              <li>
-                <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-              </li>
-            <?php endforeach; ?>
-          </ul>
+            <?php if(count($images) > 1): ?>
+              <div class="col-sm-offset-2 col-sm-8">
+                <div class='artist__image-wrapper' data-artist-image-carousel>
+                  <?php foreach( $images as $image ): ?>
+                    <div class="artist__image">
+                      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    </div>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            <?php else: ?>
+              <div class="col-sm-offset-2 col-sm-8">
+                <div class='artist__image-wrapper'>
+                  <?php foreach( $images as $image ): ?>
+                    <div class="artist__image">
+                      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    </div>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            <?php endif; ?>
+
         <?php endif; ?>
 
 
@@ -39,4 +56,4 @@
       wp_reset_postdata();
     }?>
   </div><!-- .post -->
-</div><!-- .content -->
+</section><!-- .content -->
