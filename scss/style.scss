@@ -32,9 +32,12 @@ Version: 3.0
 @import "ui/buttons";
 @import "ui/lists";
 @import "ui/inputs";
+@import "ui/carousels";
 
 // Partials
 @import "partials/main";
 @import "partials/nav";
+@import "partials/news_section";
+@import "partials/people_section";
 
 // Vendor
