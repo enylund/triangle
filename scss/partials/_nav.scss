@@ -3,8 +3,30 @@
 //
 
 .main-nav {
-  @include margin-top-small;
-  @include margin-bottom-large;
+  position: fixed;
+  background: white;
+  z-index: 1000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-height: 80px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.site-title {
+  @include default-link;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.main-nav__inner-wrapper {
+  transition: 0.25s ease-in-out;
+  transform: translateY(-140px);
+}
+
+.main-nav__inner-wrapper.active {
+ transform: translateY(0px);
 }
 
 ul#menu-primary-menu-links {
