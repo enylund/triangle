@@ -76,5 +76,14 @@ $(document).on('page:load ready page:restore', function() {
   App.runFunctions(App.afterPageLoad);
 });
 
+//////////////////////////////////////////////////////////////
+// On Page Scroll
+//////////////////////////////////////////////////////////////
+
+$(function() {
+  $(window).on('scroll', function() {
+    App.runFunctions(App.pageScroll);
+  });
+});
 
 
