@@ -1,6 +1,10 @@
 //
 // Program Section
 //
+section.program {
+  @include margin-bottom-huge;
+}
+
 .program_item {
   @include margin-bottom-medium;
 }
