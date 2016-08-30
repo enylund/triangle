@@ -4,11 +4,18 @@
         <a href="<?php bloginfo('url'); ?>/" rel="home"><?php bloginfo('name'); ?></a>
       </div>
       <nav class="footer__navigation col-sm-6">
-        <?php the_field('address_line_1', 'option'); ?>
-        <?php the_field('address_line_2', 'option'); ?>
-        <?php the_field('telephone_number', 'option'); ?>
-        <?php the_field('email_link', 'option'); ?>
-
+        <div class="footer-element">
+          <?php the_field('address_line_1', 'option'); ?>
+        </div>
+        <div class="footer-element">
+          <?php the_field('address_line_2', 'option'); ?>
+        </div>
+        <div class="footer-element">
+          <?php the_field('telephone_number', 'option'); ?>
+        </div>
+        <div class="footer-element">
+          <?php the_field('email_link', 'option'); ?>
+        </div>
         <?php
           $args = array(
             'theme_location' => 'footer'
