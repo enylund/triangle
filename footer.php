@@ -14,7 +14,7 @@
               <?php the_field('telephone_number', 'option'); ?>
             </div>
             <div class="footer-element">
-              <?php the_field('email_link', 'option'); ?>
+              <a href="<?php the_field('email_link', 'option'); ?>/" >Contact</a>
             </div>
             <?php
               $args = array(
