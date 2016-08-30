@@ -29,10 +29,8 @@
  transform: translateY(0px);
 }
 
-ul#menu-primary-menu-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.menu-primary-menu-links-container {
+ @include clear-list-style;
 }
 
 #menu-primary-menu-links li {
