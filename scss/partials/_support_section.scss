@@ -1,7 +1,11 @@
 .support-button-wrapper {
-  @include support-link;
   position: relative;
 }
+
+.support-button-link {
+  color: $white !important;
+}
+
 .support-button-link {
   position: absolute;
   top: 45%;
@@ -9,6 +13,17 @@
   transform: translate(-50%, -50%);
 }
 
+.support-button-wrapper svg {
+  padding: 2px;
+}
+
 .support-blob__inner-group{
   fill:$black !important;
+
+  &:hover {
+    fill:$white !important;
+    stroke: $black !important;
+    stroke-width: 3px;
+  }
 }
+
