@@ -5,3 +5,7 @@
 .news {
   @include margin-bottom-huge;
 }
+
+.news_item_wrapper {
+  @include default-link ($black, $black, $black, $black)
+}
