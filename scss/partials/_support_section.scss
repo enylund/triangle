@@ -1,7 +1,8 @@
-.parent {
+.support-button-wrapper {
+  @include support-link;
   position: relative;
 }
-.child {
+.support-button-link {
   position: absolute;
   top: 45%;
   left:43%;
