@@ -11,3 +11,7 @@
  @include default-link ($black, $black, $black, $black);
  text-transform: uppercase;
 }
+
+.footer-element {
+  @include default-link ($black, $black, $black, $black);
+}
