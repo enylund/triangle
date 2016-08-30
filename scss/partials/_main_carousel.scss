@@ -1,0 +1,17 @@
+//
+// Main Carousel Section
+//
+
+.main_carousel {
+  @include margin-top-huge;
+  @include margin-bottom-medium;
+}
+
+.main-carousel-content__title {
+  @include font--huge;
+  text-transform: uppercase;
+}
+
+.main-carousel-content__season {
+  @include font--huge;
+}
