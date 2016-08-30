@@ -15,7 +15,7 @@
 }
 
 .site-title {
-  @include default-link;
+  @include default-link($black, $black, $black, $black);
   text-transform: uppercase;
   margin-bottom: 100px;
 }
@@ -38,6 +38,6 @@
   text-transform: uppercase;
 }
 
-#menu-primary-menu-links li a {
-  @include default-link;
+#menu-primary-menu-links li {
+  @include default-link($black, $black, $black, $black);
 }
