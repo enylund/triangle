@@ -2,8 +2,36 @@
 // Links
 //
 
-@mixin default-link {
-    display: block;
-    color: black;
-    text-decoration: none;
+@mixin default-link ($link, $visit, $hover, $active) {
+  a {
+    color: $link !important;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin support-link {
+  a {
+    color: $white !important;
+    text-decoration: none !important;
+    &:visited {
+      color: $white !important;
+      text-decoration: none !important;
+    }
+    &:hover {
+      color: $white !important;
+      text-decoration: none !important;
+    }
+    &:active {
+      color: $white !important;
+      text-decoration: none !important;
+    }
+  }
 }
