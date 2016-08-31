@@ -14,7 +14,10 @@
           $main_carousel_title = get_field('title');
           $main_carousel_season = get_field('season'); ?>
 
-          <div class="col-sm-12 main-carousel-content__title">
+          <div class="blob ">
+            <img src="<?php bloginfo('template_directory');?>/images/blobs/blob_test.png">
+          </div>
+          <div class="main-carousel-content__title">
             <?php echo $main_carousel_title ?>
           </div>
 

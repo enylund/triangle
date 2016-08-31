@@ -3,7 +3,7 @@
 //
 
 .main_carousel {
-  @include margin-top-huge;
+  @include margin-top-large;
   @include margin-bottom-medium;
 }
 
@@ -14,4 +14,21 @@
 
 .main-carousel-content__season {
   @include font--huge;
+}
+
+.blob {
+
+  shape-outside: url(‘images/blobs/blob_test.png’);
+  float:left;
+}
+
+.blob-2 {
+  shape-outside: url(‘images/blobs/blob_test.png’);
+  float:right;
+}
+
+.blob-2 img {
+  position: relative;
+  top: 100px;
+  left: 50px;
 }
