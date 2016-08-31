@@ -12,6 +12,7 @@
   overflow: hidden;
   width: 100%;
 
+  font-size: 39px;
 }
 
 .site-title {
@@ -34,10 +35,8 @@
 }
 
 #menu-primary-menu-links li {
+  @include default-link($black, $black, $black, $black);
   display: inline-block;
   text-transform: uppercase;
-}
-
-#menu-primary-menu-links li {
-  @include default-link($black, $black, $black, $black);
+  padding-right:10px;
 }
